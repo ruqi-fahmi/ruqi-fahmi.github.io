@@ -334,3 +334,43 @@ footer {
     }
   }
 }
+
+/* ---------------------------------------------------- halaman karya */
+
+.kembali {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: var(--step--1); color: var(--text-mute); text-decoration: none;
+  margin-bottom: 20px;
+}
+.kembali::before { content: "\2190"; }
+.kembali:hover { color: var(--accent); }
+
+.figur { margin: 40px 0 0; }
+.sketsa {
+  width: 100%; height: auto; display: block;
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+}
+.figur figcaption {
+  font-size: 13px; color: var(--text-mute); margin-top: 12px; line-height: 1.55;
+}
+
+.karya-lain {
+  display: block; padding: 16px 18px; margin-bottom: 10px;
+  background: var(--bg-elevated); border: 1px solid var(--border);
+  border-radius: var(--radius); text-decoration: none; color: var(--text);
+  transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+.karya-lain:hover {
+  transform: translateY(-2px); border-color: var(--border-strong); box-shadow: var(--shadow);
+}
+.karya-lain strong { display: block; font-weight: 600; margin-bottom: 3px; }
+.karya-lain span { font-size: var(--step--1); color: var(--text-mute); }
+
+.selengkapnya {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 16px;
+  font-size: var(--step--1); font-weight: 550; color: var(--accent);
+  text-decoration: none;
+}
+.selengkapnya::after { content: "\2192"; transition: transform .16s ease; }
+.item:hover .selengkapnya::after { transform: translateX(3px); }
