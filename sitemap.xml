@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ruqi-fahmi.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/"/>
+    <lastmod>2026-08-08</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ruqi-fahmi.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/"/>
+    <lastmod>2026-08-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>

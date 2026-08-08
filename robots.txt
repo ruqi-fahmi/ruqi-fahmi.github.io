@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ruqi-fahmi.github.io/sitemap.xml
