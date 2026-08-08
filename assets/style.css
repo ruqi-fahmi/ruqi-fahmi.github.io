@@ -305,3 +305,32 @@ footer {
   section { padding-top: 22px; break-inside: avoid; }
   a { color: #000; }
 }
+
+/* ---------------------------------------------------- logo */
+
+.chip { display: inline-flex; align-items: center; gap: 7px; }
+.chip img {
+  width: 15px; height: 15px; flex: none;
+  transition: filter .16s ease;
+}
+
+/* Beberapa logo merek berwarna nyaris hitam sehingga lenyap di tema gelap.
+   Daftar ini dihasilkan dari luminansi warna asli tiap berkas, bukan ditebak. */
+  :root[data-theme="dark"] .chip img[src$="/css.svg"],
+  :root[data-theme="dark"] .chip img[src$="/dbeaver.svg"],
+  :root[data-theme="dark"] .chip img[src$="/express.svg"],
+  :root[data-theme="dark"] .chip img[src$="/java.svg"],
+  :root[data-theme="dark"] .chip img[src$="/nextjs.svg"] {
+  filter: invert(1) brightness(1.6);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    .chip img[src$="/css.svg"],
+    .chip img[src$="/dbeaver.svg"],
+    .chip img[src$="/express.svg"],
+    .chip img[src$="/java.svg"],
+    .chip img[src$="/nextjs.svg"] {
+      filter: invert(1) brightness(1.6);
+    }
+  }
+}
