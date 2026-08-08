@@ -1,0 +1,109 @@
+---
+/**
+ * Halaman detail karya, versi Indonesia, di /karya/<slug>/.
+ * Pasangannya dalam bahasa Inggris ada di /work/<slug>/.
+ */
+import Base from "../../layouts/Base.astro";
+import Sketch from "../../components/Sketch.astro";
+import Chips from "../../components/Chips.astro";
+import { works } from "../../data/work";
+
+export function getStaticPaths() {
+  return works.map((w) => ({ params: { slug: w.slug }, props: { work: w } }));
+}
+
+const { work } = Astro.props;
+const d = work.id;
+const SITUS = "https://ruqi-fahmi.github.io";
+const canonical = `${SITUS}/karya/${work.slug}/`;
+const alt = `${SITUS}/work/${work.slug}/`;
+const lain = works.filter((w) => w.slug !== work.slug);
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: d.name,
+    description: d.summary,
+    url: canonical,
+    inLanguage: "id-ID",
+    author: { "@type": "Person", name: "Ruqi Fahmi Sadad", url: `${SITUS}/id/` },
+    keywords: d.stack.join(", "),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Ruqi Fahmi Sadad", item: `${SITUS}/id/` },
+      { "@type": "ListItem", position: 2, name: d.name, item: canonical },
+    ],
+  },
+];
+---
+
+<Base
+  title={`${d.name} — Ruqi Fahmi Sadad`}
+  description={`${d.summary} Dibangun oleh Ruqi Fahmi Sadad.`}
+  lang="id"
+  canonical={canonical}
+  alt={alt}
+  ogType="article"
+  schema={schema}
+>
+  <header class="hero">
+    <a class="kembali" href="/id/">Kembali ke profil</a>
+    <h1>{d.name}</h1>
+    <p class="lead">{d.summary}</p>
+    <p class="place">Peran: {d.role} &nbsp;·&nbsp; Masa: {d.period}</p>
+  </header>
+
+  <figure class="figur">
+    <Sketch variant={work.variant} label="Sketsa tata letak dashboard" />
+    <figcaption>
+      Ilustrasi di atas adalah gambaran tata letak, bukan tangkapan layar. Sistem ini
+      memuat data pelanggan sehingga tampilan aslinya tidak dipublikasikan.
+    </figcaption>
+  </figure>
+
+  <section id="masalah">
+    <h2>Masalah</h2>
+    {d.problem.map((p) => <p>{p}</p>)}
+  </section>
+
+  <section id="pendekatan">
+    <h2>Pendekatan</h2>
+    {d.approach.map((p) => <p>{p}</p>)}
+  </section>
+
+  {d.decisions.length > 0 && (
+    <section id="keputusan">
+      <h2>Keputusan teknis</h2>
+      {d.decisions.map((k) => (
+        <div class="item">
+          <h3>{k.title}</h3>
+          <p>{k.body}</p>
+        </div>
+      ))}
+    </section>
+  )}
+
+  <section id="hasil">
+    <h2>Hasil</h2>
+    <p>{d.outcome}</p>
+  </section>
+
+  <section id="stack">
+    <h2>Teknologi</h2>
+    <Chips items={d.stack} />
+  </section>
+
+  <section id="lain">
+    <h2>Karya lainnya</h2>
+    {lain.map((w) => (
+      <a class="karya-lain" href={`/karya/${w.slug}/`}>
+        <strong>{w.id.name}</strong>
+        <span>{w.id.summary}</span>
+      </a>
+    ))}
+  </section>
+</Base>

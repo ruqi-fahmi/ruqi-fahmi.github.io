@@ -1,0 +1,12 @@
+# keluaran build dan ketergantungan
+dist/
+node_modules/
+.astro/
+
+# berkas sementara migrasi
+.migrasi/
+
+# jangan pernah masuk
+.env
+*.pem
+*.key

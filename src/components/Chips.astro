@@ -1,0 +1,22 @@
+---
+/** Deretan teknologi berlogo. Logo diambil dari berkas lokal, bukan CDN. */
+import { logos } from "../data/logos";
+
+export interface Props { items: string[] }
+const { items } = Astro.props;
+---
+
+<div class="chips">
+  {items.map((nama) => {
+    const berkas = logos[nama];
+    return (
+      <span class="chip">
+        {berkas && (
+          <img src={`/assets/logos/${berkas}.svg`} alt="" width="15" height="15"
+               loading="lazy" aria-hidden="true" />
+        )}
+        {nama}
+      </span>
+    );
+  })}
+</div>

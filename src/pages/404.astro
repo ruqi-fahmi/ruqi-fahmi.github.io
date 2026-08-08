@@ -1,0 +1,35 @@
+---
+import Base from "../layouts/Base.astro";
+import { works } from "../data/work";
+
+const SITUS = "https://ruqi-fahmi.github.io";
+---
+
+<Base
+  title="Page not found — Ruqi Fahmi Sadad"
+  description="The page you are looking for is not here."
+  lang="en"
+  canonical={`${SITUS}/404.html`}
+  alt={`${SITUS}/id/`}
+  noindex={true}
+>
+  <header class="hero">
+    <h1>404</h1>
+    <p class="lead">The page you are looking for is not here.</p>
+    <p class="place">The link may have changed, or the address may contain a typo.</p>
+    <div class="links">
+      <a href="/">Go to profile</a>
+      <a href="/id/">Versi Indonesia</a>
+    </div>
+  </header>
+
+  <section id="work">
+    <h2>Work</h2>
+    {works.map((w) => (
+      <a class="karya-lain" href={`/work/${w.slug}/`}>
+        <strong>{w.en.name}</strong>
+        <span>{w.en.summary}</span>
+      </a>
+    ))}
+  </section>
+</Base>

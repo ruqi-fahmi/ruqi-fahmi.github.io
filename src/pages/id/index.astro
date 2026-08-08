@@ -1,0 +1,669 @@
+---
+/**
+ * Halaman profil berbahasa Indonesia.
+ *
+ * Isinya sengaja tetap berupa penanda statis, bukan komponen per bagian. Naskah
+ * di sini ditulis dan disunting berkali-kali oleh pemiliknya sendiri, sehingga
+ * memecahnya menjadi data justru mempersulit penyuntingan berikutnya.
+ */
+import Base from "../../layouts/Base.astro";
+
+const SITUS = "https://ruqi-fahmi.github.io";
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ruqi Fahmi Sadad",
+  "givenName": "Ruqi Fahmi",
+  "familyName": "Sadad",
+  "alternateName": [
+    "Ruqi Fahmi",
+    "Ruqi Sadad",
+    "Ruqi"
+  ],
+  "jobTitle": "Data Analyst & IT Development",
+  "description": "Ruqi Fahmi Sadad, dikenal juga sebagai Ruqi Fahmi — Data Analyst & IT Development di PT Infomedia Nusantara. Membangun sistem analitik penagihan telekomunikasi, dari backend Python dan MySQL sampai frontend Vue.",
+  "url": "https://ruqi-fahmi.github.io/id/",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "PT Infomedia Nusantara",
+    "url": "https://www.infomedia.co.id/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Universitas Mulawarman",
+      "url": "https://unmul.ac.id/"
+    },
+    {
+      "@type": "HighSchool",
+      "name": "SMA Sejahtera 1 Depok"
+    }
+  ],
+  "knowsAbout": [
+    "Python",
+    "JavaScript",
+    "SQL",
+    "PHP",
+    "Java",
+    "R",
+    "HTML",
+    "CSS",
+    "SQL Server",
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "FastAPI",
+    "Express",
+    "Node.js",
+    "Laravel",
+    "REST API",
+    "Vue.js",
+    "PrimeVue",
+    "Vite",
+    "React",
+    "Next.js",
+    "Bootstrap",
+    "React Native",
+    "Android",
+    "Power BI",
+    "ETL",
+    "Data Analysis",
+    "Business Intelligence",
+    "Data Visualization",
+    "Linux",
+    "Nginx",
+    "Docker",
+    "Git",
+    "GitHub Actions",
+    "Robotic Process Automation",
+    "Dashboard Engineering",
+    "Marketing Strategy"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Associate Strategy Manager (ASM)",
+      "credentialCategory": "certification",
+      "url": "https://americanacademy-indonesia.com/associate-certificate/associate-certificate-member-status/",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "American Academy Asia Pacific — Indonesia Chapter",
+        "url": "https://americanacademy-indonesia.com/"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "R Fundamental for Data Science",
+      "credentialCategory": "certification",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DQLab"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Introduction to Data Science with R",
+      "credentialCategory": "certification",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DQLab"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Fundamental SQL Using Select Statement",
+      "credentialCategory": "certification",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "DQLab"
+      }
+    }
+  ],
+  "award": [
+    "Juara 1 Marketing Plan Competition ANMPC 2023, Universitas Andalas",
+    "Finalis MTQMN 2023 cabang Desain Aplikasi Komputer Al-Qur'an, Universitas Brawijaya",
+    "Juara 1 MTQ cabang Desain Aplikasi Komputer Al-Qur'an, Universitas Mulawarman 2023",
+    "Juara 2 Lomba Video Kreatif Nasional, UIN Imam Bonjol Padang 2022",
+    "Juara 3 Lomba Video Kreatif Nasional, Baznas 2021"
+  ],
+  "nationality": {
+    "@type": "Country",
+    "name": "Indonesia"
+  },
+  "sameAs": [
+    "https://github.com/ruqi-fahmi",
+    "https://www.linkedin.com/in/ruqi-fahmi-0896a41bb/"
+  ]
+};
+const nav = [{"href": "#perjalanan", "label": "Perjalanan"}, {"href": "#karya", "label": "Karya"}, {"href": "#keahlian", "label": "Keahlian"}, {"href": "#prestasi", "label": "Prestasi"}];
+---
+
+<Base
+  title={"Ruqi Fahmi Sadad — Data Analyst & IT Development"}
+  description={"Ruqi Fahmi Sadad, dikenal juga sebagai Ruqi Fahmi — Data Analyst & IT Development di PT Infomedia Nusantara. Membangun sistem analitik penagihan dari backend Python dan MySQL sampai frontend Vue. Sarjana Manajemen Universitas Mulawarman, Associate Strategy Manager (ASM)."}
+  lang="id"
+  canonical={`${SITUS}/id/`}
+  alt={`${SITUS}/`}
+  schema={[schema]}
+  nav={nav}
+>
+<header class="hero">
+    <h1>Ruqi Fahmi Sadad</h1>
+    <p class="aka">Dikenal juga sebagai <strong>Ruqi Fahmi</strong></p>
+    <p class="role">Data Analyst &amp; IT Development</p>
+    <p class="place">PT Infomedia Nusantara · Jakarta, Indonesia</p>
+
+    <div class="links">
+      <a href="https://github.com/ruqi-fahmi" rel="me">GitHub</a>
+      <a href="https://www.linkedin.com/in/ruqi-fahmi-0896a41bb/" rel="me">LinkedIn</a>
+      <a href="mailto:ruqifahmi40@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section id="tentang">
+    <h2>Tentang</h2>
+    <p class="lead">
+      Saya selalu melihat teknologi sebagai alat, bukan tujuan akhir.
+    </p>
+    <p>
+      Dasar saya sebenarnya manajemen. Dari situ saya belajar membaca masalah,
+      proses, target, dan cara kerja orang di lapangan. Sisi teknis saya bangun
+      pelan-pelan lewat jalur yang saya pilih sendiri: bootcamp, latihan, dan
+      kebutuhan kerja yang makin lama makin nyata.
+    </p>
+    <p>
+      Awalnya sederhana. Tahun 2021 saya mulai memegang database sebuah yayasan
+      dengan MySQL, phpMyAdmin, dan XAMPP. Dari situ database bukan lagi sekadar
+      materi kuliah, tapi sesuatu yang harus dijaga karena dipakai orang lain.
+    </p>
+    <p>
+      Setelah itu saya mengikuti beberapa bootcamp pada 2022 sampai 2023. Mulai
+      dari HTML, Laravel, JavaScript, React, Next.js, Express, MongoDB, sampai
+      React Native. Saya belajar teknis bukan untuk mengumpulkan stack, tapi
+      karena ada masalah yang ingin saya selesaikan.
+    </p>
+    <p>
+      Di 2023, dua sisi itu mulai bertemu. Saya menjuarai Marketing Plan
+      Competition tingkat nasional di Universitas Andalas, lalu juga menjuarai
+      lomba desain aplikasi Al-Qur'an dan menjadi finalis nasionalnya. Satu dari
+      sisi bisnis, satu dari sisi teknologi.
+    </p>
+    <p>
+      Di Telkomsel, saya memulai dari customer service. Saya menjalankan
+      program-program Telkomsel dan Telkom yang aturannya cukup rumit, lalu
+      menerjemahkannya ke percakapan yang bisa dipahami pelanggan. Dua tahun di
+      posisi itu memberi saya sudut pandang yang sulit didapat dari dokumentasi:
+      bagaimana sebuah program benar-benar berjalan di lapangan.
+    </p>
+    <p>
+      Sekarang saya membangun sistem untuk mendukung pekerjaan itu. Sistem yang
+      mengubah data penagihan mentah menjadi keputusan operasional harian, mulai
+      dari pengambilan data, database, sampai dashboard yang dipakai tim.
+    </p>
+    <p>
+      Yang paling saya pedulikan bukan dashboard yang terlihat ramai. Yang
+      penting adalah angka yang benar. Karena satu metrik yang salah definisi
+      bisa membuat keputusan ikut salah, bahkan tanpa disadari.
+    </p>
+  </section>
+
+  <section id="perjalanan">
+    <h2>Perjalanan</h2>
+    <div class="tl">
+      <div class="tl-row">
+        <span class="tl-year">2020</span>
+        <div>Mulai kuliah <strong>Manajemen</strong> di Universitas Mulawarman. Pilihan yang saya ambil sadar, karena inti persoalan ada di bisnis, sementara sisi teknis saya tempuh lewat bootcamp. Aktif di International Language Society, SQ Unmul, dan LDF An-Nuur FEB.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2021</span>
+        <div><strong>Database pertama</strong>. Dipercaya sebagai IT Specialist di Yayasan Madinah Salam, memegang MySQL lewat phpMyAdmin. Juara 3 lomba video kreatif nasional Baznas.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2022</span>
+        <div><strong>Membangun sisi teknis</strong>. Pelatihan ngoding web di HalalCode (Jan–Jul), sertifikasi R dan SQL dari DQLab, lalu bootcamp PWA/Android/iOS di IOI (Agu, 48 pertemuan). Juara 2 lomba video kreatif nasional UIN Imam Bonjol. Menjabat Ketua Umum LDF An-Nuur.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2023</span>
+        <div><strong>Rancangan terbukti</strong>. Bootcamp Web &amp; Mobile Development di IOI (Feb, 50 pertemuan). Juara 1 Marketing Plan Competition ANMPC di Universitas Andalas, Juara 1 MTQ cabang Desain Aplikasi Al-Qur'an, dan finalis nasional MTQMN XVII di Universitas Brawijaya. Lulus Desember dengan IPK 3,77.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2024</span>
+        <div>Bergabung dengan <strong>Telkomsel</strong> sebagai customer service di Customer Care and Retention, menjalankan program-program Telkomsel dan Telkom yang cukup rumit, langsung berhadapan dengan pelanggan.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2026</span>
+        <div><strong>Giliran membuat programnya</strong>. Data Analyst &amp; IT Development di PT Infomedia Nusantara. Dari yang dulu menjalankan program, kini membangun sistem analitik yang menopang program itu sendiri.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman">
+    <h2>Pengalaman</h2>
+
+    <div class="item">
+      <h3>Data Analyst &amp; IT Development</h3>
+      <p class="meta">PT Infomedia Nusantara · Feb 2026 – sekarang · Jakarta</p>
+      <p>
+        Menangani analitik penagihan Telkomsel untuk lini fixed broadband dan
+        seluler pascabayar. Merancang dan menulis sendiri sebagian besar sistem
+        yang saya pegang: backend Python, skema dan kueri MySQL, sinkronisasi
+        lintas sumber data, sampai frontend Vue yang dipakai pengguna akhir.
+      </p>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">MySQL</span>
+        <span class="tag">SQL Server</span><span class="tag">Vue 3</span>
+        <span class="tag">Power BI</span><span class="tag">Linux</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <h3>Customer Service — Customer Care and Retention</h3>
+      <p class="meta">Telkomsel · Jun 2024 – Feb 2026 · Jakarta</p>
+      <p>
+        Menangani sekitar 100 pertanyaan pelanggan setiap minggu untuk produk
+        Telkomsel, IndiHome, dan Orbit, termasuk melayani pelanggan asing dalam
+        bahasa Inggris untuk pendaftaran IMEI. Menjalankan program-program
+        Telkomsel dan Telkom yang ketentuannya cukup rumit, lalu
+        menerjemahkannya menjadi percakapan yang bisa dipahami pelanggan.
+        Mempertahankan KPI Excellent selama lebih dari satu tahun.
+      </p>
+      <p>
+        Hampir dua tahun ini membentuk cara saya bekerja sekarang: saya pernah
+        berada di ujung yang menjalankan program, jadi saya tahu bagian mana
+        yang benar-benar terpakai dan bagian mana yang hanya bagus di atas
+        kertas.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>IT Specialist</h3>
+      <p class="meta">Yayasan Madinah Salam · Jan 2021 – Jan 2023 · Jakarta Selatan · paruh waktu, remote</p>
+      <p>
+        Mengelola situs organisasi dan mengerjakan analisis data untuk pelaporan
+        ke Kepala Program, termasuk memelihara catatan identitas siswa dengan
+        tingkat akurasi tinggi. Basis datanya MySQL lewat phpMyAdmin, dengan
+        lingkungan XAMPP dan Laragon. Dua tahun ini adalah pengalaman pertama
+        saya mengurus database sebagai tanggung jawab, bukan sekadar materi
+        kuliah.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Administrasi</h3>
+      <p class="meta">ASPA Nusantara · Mar 2019 – Sep 2019 · Jakarta</p>
+      <p>
+        Mengelola penagihan lebih dari 200 pelanggan, menyusun laporan tagihan
+        harian, serta menghitung pendapatan harian dan bulanan. Juga memproses
+        penggajian karyawan dan menjalankan survei pelanggan untuk persetujuan
+        kredit.
+      </p>
+      <p>
+        Pekerjaan pertama saya, dan kebetulan sudah soal penagihan juga.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Service Ambassador</h3>
+      <p class="meta">Unit Layanan Terpadu Universitas Mulawarman · 2023 – 2024 · Samarinda</p>
+      <p>
+        Melayani lebih dari 500 permintaan layanan dengan skor kepuasan 95 persen
+        pada kategori Sangat Puas. Pada periode yang sama, ULT Unmul meraih
+        Golden Winner Diktiristek Public Relations Award 2023 untuk subkategori
+        ULT PTN BLU.
+      </p>
+    </div>
+  </section>
+
+  <section id="karya">
+    <h2>Yang saya bangun</h2>
+    <div class="item">
+      <h3>Dashboard PraNPC IndiHome</h3>
+      <p class="meta">Sistem produksi, dipakai harian oleh tim operasional</p>
+      <p>
+        Platform utama untuk memantau efektivitas penagihan pelanggan IndiHome.
+        Menggabungkan data pekerjaan lapangan, hasil kontak, dan konfirmasi
+        pembayaran menjadi satu papan pantau: capaian terhadap target, laju
+        harian, perbandingan antar periode, sampai peringkat per wilayah dan per
+        petugas.
+      </p>
+      <p>
+        Saya menangani seluruh lapisannya, mulai dari backend Python, skema dan
+        kueri MySQL, sinkronisasi lintas sumber data, autentikasi, sampai
+        penerapan di server produksi berikut pemantauannya.
+      </p>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">MySQL</span>
+        <span class="tag">SQL Server</span><span class="tag">Vue 3</span>
+        <span class="tag">Linux</span><span class="tag">CI/CD</span>
+      </div>
+      <a class="selengkapnya" href="/karya/pranpc-indihome/">Selengkapnya</a>
+    </div>
+
+    <div class="item">
+      <h3>Dashboard PraNPC Mobile</h3>
+      <p class="meta">Sistem produksi</p>
+      <p>
+        Sistem sejenis untuk lini seluler pascabayar, dengan model perhitungan
+        periode dan kanal penagihan yang berbeda. Menyatukan beberapa kanal
+        sentuhan pelanggan, yaitu kunjungan lapangan, panggilan keluar, dan
+        pesan, menjadi satu gambaran utuh perjalanan pelanggan dari dihubungi
+        sampai membayar.
+      </p>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">MySQL</span>
+        <span class="tag">Vue 3</span><span class="tag">ETL</span>
+      </div>
+      <a class="selengkapnya" href="/karya/pranpc-mobile/">Selengkapnya</a>
+    </div>
+
+    <div class="item">
+      <h3>Dashboard C3MR IndiHome</h3>
+      <p class="meta">Sistem produksi</p>
+      <p>
+        Memantau efektivitas penagihan pada tahap awal, yaitu masa First
+        Reminder dan Second Reminder, di atas basis pelanggan berskala jutaan
+        baris. Dilengkapi pemrosesan berkala dan peringatan otomatis ketika ada
+        proses yang gagal.
+      </p>
+      <p>
+        Bersama PraNPC, keduanya menutup rentang penagihan dari tahap paling
+        awal sampai tahap akhir.
+      </p>
+      <div class="tags">
+        <span class="tag">FastAPI</span><span class="tag">MySQL</span>
+        <span class="tag">Redis</span><span class="tag">Nginx</span>
+      </div>
+      <a class="selengkapnya" href="/karya/c3mr-indihome/">Selengkapnya</a>
+    </div>
+
+    <div class="item">
+      <h3>Dashboard Tiketing dan Ordering All Channel</h3>
+      <p class="meta">Sistem produksi</p>
+      <p>
+        Papan pantau tiket layanan dan pemesanan dari seluruh kanal dalam satu
+        tampilan, lengkap dengan autentikasi dua faktor dan pipeline pengambilan
+        data terjadwal.
+      </p>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">MySQL</span>
+        <span class="tag">2FA</span><span class="tag">GitHub Actions</span>
+      </div>
+      <a class="selengkapnya" href="/karya/tiketing-ordering/">Selengkapnya</a>
+    </div>
+
+    <div class="item">
+      <h3>Dashboard Analytics Trend Sentimen Media Sosial</h3>
+      <p class="meta">Sistem produksi</p>
+      <p>
+        Memantau tren dan sentimen percakapan di media sosial, lalu
+        merangkumnya menjadi gambaran yang bisa dibaca cepat oleh tim.
+      </p>
+      <a class="selengkapnya" href="/karya/sentimen-media-sosial/">Selengkapnya</a>
+    </div>
+  </section>
+
+  <section id="keahlian">
+    <h2>Keahlian</h2>
+    <div class="skill">
+      <h3>Bahasa</h3>
+      <div class="chips"><span class="chip"><img src="/assets/logos/python.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Python</span><span class="chip"><img src="/assets/logos/javascript.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">JavaScript</span><span class="chip">SQL</span><span class="chip"><img src="/assets/logos/php.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">PHP</span><span class="chip"><img src="/assets/logos/java.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Java</span><span class="chip"><img src="/assets/logos/r.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">R</span><span class="chip"><img src="/assets/logos/html.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">HTML</span><span class="chip"><img src="/assets/logos/css.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">CSS</span></div>
+    </div>
+    <div class="skill">
+      <h3>Basis data</h3>
+      <div class="chips"><span class="chip">SQL Server</span><span class="chip"><img src="/assets/logos/mysql.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">MySQL</span><span class="chip"><img src="/assets/logos/postgresql.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">PostgreSQL</span><span class="chip"><img src="/assets/logos/mongodb.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">MongoDB</span><span class="chip"><img src="/assets/logos/redis.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Redis</span></div>
+      <p>Perancangan skema, optimasi kueri, ETL, dan rekonsiliasi data lintas sumber.</p>
+    </div>
+    <div class="skill">
+      <h3>Perkakas basis data</h3>
+      <div class="chips"><span class="chip"><img src="/assets/logos/dbeaver.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">DBeaver</span><span class="chip"><img src="/assets/logos/phpmyadmin.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">phpMyAdmin</span><span class="chip"><img src="/assets/logos/xampp.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">XAMPP</span><span class="chip"><img src="/assets/logos/laragon.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Laragon</span></div>
+      <p>Sehari-hari saya bekerja dengan basis data jarak jauh lewat DBeaver.</p>
+    </div>
+    <div class="skill">
+      <h3>Backend</h3>
+      <div class="chips"><span class="chip"><img src="/assets/logos/fastapi.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">FastAPI</span><span class="chip"><img src="/assets/logos/express.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Express</span><span class="chip"><img src="/assets/logos/nodejs.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Node.js</span><span class="chip"><img src="/assets/logos/laravel.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Laravel</span></div>
+      <p>Desain REST API, pemrograman berorientasi objek, dan pemrosesan terjadwal.</p>
+    </div>
+    <div class="skill">
+      <h3>Frontend</h3>
+      <div class="chips"><span class="chip"><img src="/assets/logos/vue.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Vue 3</span><span class="chip"><img src="/assets/logos/primevue.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">PrimeVue</span><span class="chip"><img src="/assets/logos/vite.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Vite</span><span class="chip"><img src="/assets/logos/react.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">React</span><span class="chip"><img src="/assets/logos/nextjs.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Next.js</span><span class="chip"><img src="/assets/logos/bootstrap.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Bootstrap</span></div>
+    </div>
+    <div class="skill">
+      <h3>Mobile</h3>
+      <div class="chips"><span class="chip"><img src="/assets/logos/react.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">React Native</span><span class="chip"><img src="/assets/logos/android.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Android</span></div>
+    </div>
+    <div class="skill">
+      <h3>Data dan analitik</h3>
+      <div class="chips"><span class="chip">Power BI</span><span class="chip"><img src="/assets/logos/r.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">R</span></div>
+      <p>ETL, perancangan definisi metrik, dan visualisasi data.</p>
+    </div>
+    <div class="skill">
+      <h3>Operasional dan penerapan</h3>
+      <div class="chips"><span class="chip"><img src="/assets/logos/linux.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Linux</span><span class="chip"><img src="/assets/logos/nginx.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Nginx</span><span class="chip">systemd</span><span class="chip"><img src="/assets/logos/docker.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Docker</span><span class="chip"><img src="/assets/logos/git.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Git</span><span class="chip"><img src="/assets/logos/githubactions.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">GitHub Actions</span></div>
+      <p>Penerapan ke VPS, akses lewat SSH tunnel, dan pemeliharaan layanan produksi.</p>
+    </div>
+    <div class="skill">
+      <h3>Otomasi dan pemantauan</h3>
+      <div class="chips"><span class="chip"><img src="/assets/logos/uptimekuma.svg" alt="" width="15" height="15" loading="lazy" aria-hidden="true">Uptime Kuma</span></div>
+      <p>Otomasi proses berulang, pemrosesan terjadwal, dan peringatan otomatis saat ada proses yang gagal.</p>
+    </div>
+    <div class="skill">
+      <h3>Bisnis</h3>
+      <p>Strategi dan perencanaan pemasaran, manajemen tim, serta analisis operasional.</p>
+    </div>
+  </section>
+
+  <section id="pelatihan">
+    <h2>Pelatihan</h2>
+
+    <div class="row">
+      <div class="mark">◆</div>
+      <div class="row-body">
+        <strong>Bootcamp Web &amp; Mobile Development — Batch 3</strong>
+        <span>
+          Input/Output International Academy (IOI) · Feb 2023 · 50 pertemuan<br>
+          JavaScript, OOP, React JS, Express JS, MongoDB, React Native
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">◆</div>
+      <div class="row-body">
+        <strong>Bootcamp PWA, Android &amp; iOS Development — Batch 2</strong>
+        <span>
+          Input/Output International Academy (IOI) · Agu 2022 · 48 pertemuan<br>
+          JavaScript, OOP, React JS, Express JS, MongoDB, Next JS, React Native
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">◆</div>
+      <div class="row-body">
+        <strong>Pelatihan Ngoding Web — From Zero to Pro, Batch 2</strong>
+        <span>
+          HalalCode · Jan – Jul 2022 · 6 bulan<br>
+          HTML, CSS, Bootstrap, JavaScript, MySQL, PHP, OOP, Laravel, React JS
+        </span>
+      </div>
+    </div>
+
+    <p class="note">
+      Ketiganya dijalani sepanjang 2022–2023 — bersamaan dengan kuliah, memegang
+      basis data di Yayasan Madinah Salam, dan memimpin lembaga kemahasiswaan.
+    </p>
+  </section>
+
+  <section id="sertifikasi">
+    <h2>Sertifikasi</h2>
+
+    <div class="row">
+      <div class="mark">✓</div>
+      <div class="row-body">
+        <strong>Associate Strategy Manager (ASM)</strong>
+        <span>
+          American Academy Asia Pacific, Indonesia Chapter ·
+          <a href="https://americanacademy-indonesia.com/associate-certificate/associate-certificate-member-status/">verifikasi keanggotaan</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">R</div>
+      <div class="row-body">
+        <strong>R Fundamental for Data Science</strong>
+        <span>DQLab · Jun 2022 · <code>DQLABINTR1PCKMOJ</code></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">R</div>
+      <div class="row-body">
+        <strong>Introduction to Data Science with R</strong>
+        <span>DQLab · Mei 2022 · <code>DQLABBGINRSCNSRJ</code></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">SQL</div>
+      <div class="row-body">
+        <strong>Fundamental SQL Using Select Statement</strong>
+        <span>DQLab · Jun 2022 · <code>DQLABSQLT1WMMHUC</code></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="prestasi">
+    <h2>Prestasi</h2>
+
+    <div class="row">
+      <div class="mark">1</div>
+      <div class="row-body">
+        <strong>Juara 1 — Marketing Plan Competition ANMPC 2023</strong>
+        <span>Universitas Andalas, Padang · Apr 2023</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">★</div>
+      <div class="row-body">
+        <strong>Finalis Nasional — MTQMN XVII 2023</strong>
+        <span>
+          Cabang Desain Aplikasi Komputer Al-Qur'an, Universitas Brawijaya ·
+          Kemendikbudristek (Pusat Prestasi Nasional) · Nov 2023 ·
+          <a href="https://unmul.ac.id/news/mtqmn-xvii-2023,-unmul-kirim-21-mahasiswa">liputan UNMUL</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">1</div>
+      <div class="row-body">
+        <strong>Juara 1 — MTQ Mahasiswa Universitas Mulawarman 2023</strong>
+        <span>Cabang Desain Aplikasi Komputer Al-Qur'an · Agu 2023</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">2</div>
+      <div class="row-body">
+        <strong>Juara 2 — Lomba Video Kreatif Nasional</strong>
+        <span>UIN Imam Bonjol, Padang · Mar 2022</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">3</div>
+      <div class="row-body">
+        <strong>Juara 3 — Lomba Video Kreatif Nasional</strong>
+        <span>Baznas · Feb 2021</span>
+      </div>
+    </div>
+
+    <p class="note">
+      Sebelumnya semasa SMA: Juara 1 lomba teater beregu di SMA 99 Jakarta dan
+      Dian Didaktika, serta penghargaan <em>Best Director</em>.
+    </p>
+  </section>
+
+  <section id="organisasi">
+    <h2>Organisasi &amp; kepemimpinan</h2>
+
+    <div class="item">
+      <h3>LDF An-Nuur FEB Universitas Mulawarman</h3>
+      <p class="meta">Nov 2020 – Des 2023 · 3 tahun 2 bulan</p>
+      <p>
+        Naik berjenjang dari staf sampai memimpin lembaga: Staff Syiar Media
+        (Nov 2020), Kepala Departemen Syiar Media (Mei 2021), <strong>Ketua
+        Umum</strong> (Des 2021 – Des 2022), lalu Ketua MPP (Des 2022 – Des
+        2023).
+      </p>
+      <p>
+        Sebagai Ketua Umum saya memimpin <strong>5 departemen dengan 128
+        anggota</strong> dan menjalankan lebih dari 40 kegiatan. Sebelumnya, saat
+        memimpin Departemen Syiar Media, tim kami memproduksi lebih dari 250
+        konten dan meraih juara 3 lomba video kreatif nasional Baznas.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Sekretaris Jenderal — BPPAI Universitas Mulawarman</h3>
+      <p class="meta">Des 2022 – Des 2023</p>
+    </div>
+
+    <div class="item">
+      <h3>Head of Regional Coordinator — Free English Program Samarinda</h3>
+      <p class="meta">Nov 2022 – Des 2023 · naik dari Regional Coordinator</p>
+      <p>
+        Ikut mendirikan program pendidikan gratis di Mangkupalas, wilayah yang
+        jauh dari pusat kota, termasuk menjalin kemitraan dengan donatur agar
+        programnya bisa terus berjalan. Kemudian mengawasi operasional dua
+        wilayah, Mangkupalas dan Wiratama.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Staff HRD — International Language Society</h3>
+      <p class="meta">Sep 2020 – Nov 2022 · Samarinda</p>
+    </div>
+
+    <div class="item">
+      <h3>Staff Education — SQ Universitas Mulawarman</h3>
+      <p class="meta">Okt 2020 – Des 2021 · Samarinda</p>
+    </div>
+  </section>
+
+  <section id="minat">
+    <h2>Di luar pekerjaan</h2>
+    <p>
+      Minat saya berkumpul di beberapa tempat: keuangan, pengolahan data,
+      programming, dan pengorganisasian. Empat hal yang ternyata bertemu di
+      pekerjaan saya sekarang. Di luar itu saya menyukai olahraga, fotografi,
+      dan videografi. Dua penghargaan video kreatif nasional di atas datang dari
+      sana, dan itu bukan kebetulan.
+    </p>
+    <p>
+      Saya mudah tertarik pada hal baru dan senang belajar hal yang belum saya
+      kuasai. Itu yang membuat daftar di halaman ini terus bertambah.
+    </p>
+  </section>
+
+  <section id="pendidikan">
+    <h2>Pendidikan</h2>
+    <div class="item">
+      <h3>Universitas Mulawarman</h3>
+      <p class="meta">S1 Manajemen · Sep 2020 – Des 2023 · IPK 3,77</p>
+      <p>
+        Skripsi di bidang manajemen keuangan. Mata kuliah yang relevan dengan
+        pekerjaan sekarang: Sistem Informasi Manajemen, Manajemen Keuangan,
+        Manajemen Risiko, Manajemen Strategik, dan Penganggaran Perusahaan.
+      </p>
+      <p>Aktif di Free English, LDF An-Nuur, ILS, dan BPPAI.</p>
+    </div>
+    <div class="item">
+      <h3>SMA Sejahtera 1 Depok</h3>
+      <p class="meta">Ilmu Pengetahuan Sosial</p>
+    </div>
+  </section>
+</Base>

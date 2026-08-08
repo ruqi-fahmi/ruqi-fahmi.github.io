@@ -1,0 +1,70 @@
+name: Build and deploy
+
+# Setiap dorongan ke main dibangun ulang lalu diterbitkan. Dengan begini isi
+# repositori tetap berupa sumber, bukan campuran sumber dan hasil build.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Terbitan berjalan satu per satu. Antrean yang menumpuk dibiarkan menunggu,
+# bukan dibatalkan, supaya tidak ada terbitan setengah jalan.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Pastikan alamat penting ikut terbangun
+        # Alamat-alamat ini sudah terindeks mesin pencari. Kalau salah satunya
+        # hilang karena perubahan susunan berkas, lebih baik terbitan gagal di
+        # sini daripada diketahui setelah peringkatnya turun.
+        run: |
+          for p in \
+            "dist/index.html" \
+            "dist/id/index.html" \
+            "dist/404.html" \
+            "dist/work/pranpc-indihome/index.html" \
+            "dist/karya/pranpc-indihome/index.html" \
+            "dist/sitemap.xml" \
+            "dist/robots.txt" \
+            "dist/googleec0cf679626ea3df.html" \
+            "dist/en/index.html"
+          do
+            if [ ! -f "$p" ]; then
+              echo "::error::berkas wajib tidak ada: $p"
+              exit 1
+            fi
+          done
+          echo "semua alamat wajib ada"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,109 @@
+---
+/**
+ * Halaman detail karya, versi Inggris, di /work/<slug>/.
+ * Pasangannya dalam bahasa Indonesia ada di /karya/<slug>/.
+ */
+import Base from "../../layouts/Base.astro";
+import Sketch from "../../components/Sketch.astro";
+import Chips from "../../components/Chips.astro";
+import { works } from "../../data/work";
+
+export function getStaticPaths() {
+  return works.map((w) => ({ params: { slug: w.slug }, props: { work: w } }));
+}
+
+const { work } = Astro.props;
+const d = work.en;
+const SITUS = "https://ruqi-fahmi.github.io";
+const canonical = `${SITUS}/work/${work.slug}/`;
+const alt = `${SITUS}/karya/${work.slug}/`;
+const lain = works.filter((w) => w.slug !== work.slug);
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: d.name,
+    description: d.summary,
+    url: canonical,
+    inLanguage: "en",
+    author: { "@type": "Person", name: "Ruqi Fahmi Sadad", url: `${SITUS}/` },
+    keywords: d.stack.join(", "),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Ruqi Fahmi Sadad", item: `${SITUS}/` },
+      { "@type": "ListItem", position: 2, name: d.name, item: canonical },
+    ],
+  },
+];
+---
+
+<Base
+  title={`${d.name} — Ruqi Fahmi Sadad`}
+  description={`${d.summary} Built by Ruqi Fahmi Sadad.`}
+  lang="en"
+  canonical={canonical}
+  alt={alt}
+  ogType="article"
+  schema={schema}
+>
+  <header class="hero">
+    <a class="kembali" href="/">Back to profile</a>
+    <h1>{d.name}</h1>
+    <p class="lead">{d.summary}</p>
+    <p class="place">Role: {d.role} &nbsp;·&nbsp; Period: {d.period}</p>
+  </header>
+
+  <figure class="figur">
+    <Sketch variant={work.variant} label="Dashboard layout sketch" />
+    <figcaption>
+      The illustration above is a layout sketch, not a screenshot. This system holds
+      customer data, so the real interface is not published.
+    </figcaption>
+  </figure>
+
+  <section id="problem">
+    <h2>Problem</h2>
+    {d.problem.map((p) => <p>{p}</p>)}
+  </section>
+
+  <section id="approach">
+    <h2>Approach</h2>
+    {d.approach.map((p) => <p>{p}</p>)}
+  </section>
+
+  {d.decisions.length > 0 && (
+    <section id="decisions">
+      <h2>Technical decisions</h2>
+      {d.decisions.map((k) => (
+        <div class="item">
+          <h3>{k.title}</h3>
+          <p>{k.body}</p>
+        </div>
+      ))}
+    </section>
+  )}
+
+  <section id="outcome">
+    <h2>Outcome</h2>
+    <p>{d.outcome}</p>
+  </section>
+
+  <section id="stack">
+    <h2>Technology</h2>
+    <Chips items={d.stack} />
+  </section>
+
+  <section id="other">
+    <h2>Other work</h2>
+    {lain.map((w) => (
+      <a class="karya-lain" href={`/work/${w.slug}/`}>
+        <strong>{w.en.name}</strong>
+        <span>{w.en.summary}</span>
+      </a>
+    ))}
+  </section>
+</Base>

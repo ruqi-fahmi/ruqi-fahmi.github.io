@@ -1,0 +1,13 @@
+---
+export interface Props { lang: "en" | "id" }
+const { lang } = Astro.props;
+const beranda = lang === "en" ? "/" : "/id/";
+---
+
+<footer>
+  <p>
+    <a href={beranda}>Ruqi Fahmi Sadad</a> ·
+    <a href="https://github.com/ruqi-fahmi">github.com/ruqi-fahmi</a> ·
+    <a href="https://www.linkedin.com/in/ruqi-fahmi-0896a41bb/">LinkedIn</a>
+  </p>
+</footer>

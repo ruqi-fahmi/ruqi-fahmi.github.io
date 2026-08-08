@@ -1,0 +1,93 @@
+---
+/**
+ * Sketsa tata letak dashboard, digambar dari kode.
+ *
+ * Dipakai sebagai pengganti tangkapan layar. Sistem yang diceritakan memuat
+ * data pelanggan, jadi tampilan aslinya tidak boleh dipublikasikan. Gambar ini
+ * murni bentuk: tidak ada satu angka pun yang berasal dari data sungguhan.
+ *
+ * Warnanya memakai token tema, sehingga ikut berubah saat pembaca mengganti
+ * mode terang atau gelap.
+ */
+export interface Props {
+  variant: "papan" | "corong" | "denyut" | "antre" | "sebaran";
+  label: string;
+}
+const { variant, label } = Astro.props;
+
+const kartu = [0, 1, 2, 3].map((i) => 16 + i * 133);
+const batang = [58, 74, 44, 88, 66, 96, 52];
+const corong = [420, 330, 240, 150];
+const denyut = [220, 196, 206, 150, 172, 128, 146, 110, 132];
+const sebaran = [
+  [70, 200, 9], [128, 172, 14], [186, 208, 7], [244, 150, 18],
+  [302, 186, 11], [360, 140, 22], [418, 178, 9], [476, 158, 13],
+];
+---
+
+<svg viewBox="0 0 560 300" role="img" aria-label={label} class="sketsa"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="560" height="300" rx="12" fill="var(--surface)" />
+  <rect x="0" y="0" width="560" height="34" rx="12" fill="var(--border)" opacity="0.55" />
+  <rect x="16" y="13" width="86" height="8" rx="4" fill="var(--accent)" opacity="0.85" />
+  <rect x="470" y="12" width="74" height="10" rx="5" fill="var(--text-mute)" opacity="0.3" />
+
+  {kartu.map((x) => (
+    <>
+      <rect x={x} y="50" width="117" height="52" rx="8" fill="var(--bg-elevated)" />
+      <rect x={x + 12} y="62" width="44" height="6" rx="3" fill="var(--text-mute)" opacity="0.45" />
+      <rect x={x + 12} y="76" width="66" height="13" rx="4" fill="var(--accent)" opacity="0.75" />
+    </>
+  ))}
+
+  {variant === "papan" && (
+    <>
+      {batang.map((t, i) => (
+        <rect x={26 + i * 42} y={248 - t} width="24" height={t} rx="5"
+              fill="var(--accent)" opacity={0.3 + i * 0.07} />
+      ))}
+      <rect x="336" y="120" width="208" height="128" rx="8" fill="var(--bg-elevated)" />
+      {[0, 1, 2, 3, 4].map((i) => (
+        <>
+          <rect x="350" y={136 + i * 22} width="96" height="7" rx="3" fill="var(--text-mute)" opacity="0.4" />
+          <rect x="470" y={136 + i * 22} width="58" height="7" rx="3" fill="var(--text-mute)" opacity="0.22" />
+        </>
+      ))}
+    </>
+  )}
+
+  {variant === "corong" && corong.map((w, i) => (
+    <rect x={(560 - w) / 2} y={124 + i * 34} width={w} height="24" rx="6"
+          fill="var(--accent)" opacity={0.55 - i * 0.1} />
+  ))}
+
+  {variant === "denyut" && (
+    <>
+      <rect x="16" y="118" width="528" height="130" rx="8" fill="var(--bg-elevated)" opacity="0.55" />
+      <polyline fill="none" stroke="var(--accent)" stroke-width="3" opacity="0.8"
+                stroke-linecap="round" stroke-linejoin="round"
+                points={denyut.map((y, i) => `${24 + i * 63},${y}`).join(" ")} />
+      {denyut.map((y, i) => <circle cx={24 + i * 63} cy={y} r="4" fill="var(--accent)" />)}
+    </>
+  )}
+
+  {variant === "antre" && [0, 1, 2, 3, 4, 5].map((i) => (
+    <>
+      <rect x="16" y={120 + i * 22} width="10" height="10" rx="3"
+            fill="var(--accent)" opacity={0.7 - i * 0.09} />
+      <rect x="36" y={123 + i * 22} width={300 - i * 26} height="7" rx="3"
+            fill="var(--text-mute)" opacity="0.38" />
+      <rect x="470" y={123 + i * 22} width="74" height="7" rx="3"
+            fill="var(--text-mute)" opacity="0.2" />
+    </>
+  ))}
+
+  {variant === "sebaran" && (
+    <>
+      {sebaran.map(([cx, cy, r]) => (
+        <circle cx={cx} cy={cy} r={r} fill="var(--accent)" opacity="0.45" />
+      ))}
+      <rect x="16" y="254" width="528" height="2" rx="1" fill="var(--border-strong)" />
+    </>
+  )}
+</svg>

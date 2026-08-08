@@ -1,0 +1,81 @@
+---
+/**
+ * Kerangka setiap halaman: kepala dokumen, bilah atas, dan kaki.
+ *
+ * Semua metadata mesin pencari dikumpulkan di sini supaya tidak ada halaman
+ * yang tertinggal. Sebelumnya tag ini disalin ke dua belas berkas HTML, dan
+ * salinan seperti itu selalu menyimpang begitu ada satu yang diubah.
+ */
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/style.css";
+
+export interface Props {
+  title: string;
+  description: string;
+  lang: "en" | "id";
+  canonical: string;
+  alt: string;              // alamat halaman yang sama dalam bahasa satunya
+  ogType?: "profile" | "article";
+  schema?: unknown[];       // blok JSON-LD
+  nav?: { href: string; label: string }[];
+  noindex?: boolean;
+}
+
+const {
+  title, description, lang, canonical, alt,
+  ogType = "profile", schema = [], nav = [], noindex = false,
+} = Astro.props;
+
+const SITUS = "https://ruqi-fahmi.github.io";
+const en = lang === "en" ? canonical : alt;
+const id = lang === "id" ? canonical : alt;
+const og = `${SITUS}/assets/og-image.png`;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="author" content="Ruqi Fahmi Sadad" />
+  {noindex && <meta name="robots" content="noindex" />}
+
+  <link rel="canonical" href={canonical} />
+  <link rel="alternate" hreflang="en" href={en} />
+  <link rel="alternate" hreflang="id" href={id} />
+  <link rel="alternate" hreflang="x-default" href={en} />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="/assets/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#b3121f" />
+
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="Ruqi Fahmi Sadad" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:locale" content={lang === "en" ? "en_US" : "id_ID"} />
+  <meta property="og:image" content={og} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ruqi Fahmi Sadad, Data Analyst dan IT Development" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={og} />
+
+  {schema.map((blok) => (
+    <script type="application/ld+json" set:html={JSON.stringify(blok, null, 2)} />
+  ))}
+</head>
+<body>
+  <div class="wrap" id="top">
+    <Nav lang={lang} alt={alt} nav={nav} home={lang === "en" ? "/" : "/id/"} />
+    <slot />
+    <Footer lang={lang} />
+  </div>
+  <script src="/assets/app.js" defer is:inline></script>
+</body>
+</html>

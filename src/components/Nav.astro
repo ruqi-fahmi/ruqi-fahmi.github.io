@@ -1,0 +1,21 @@
+---
+export interface Props {
+  lang: "en" | "id";
+  alt: string;
+  home: string;
+  nav?: { href: string; label: string }[];
+}
+const { lang, alt, home, nav = [] } = Astro.props;
+const labelLain = lang === "en" ? "ID" : "EN";
+const hreflangLain = lang === "en" ? "id" : "en";
+const gantiTema = lang === "en" ? "Switch theme" : "Ganti tema";
+---
+
+<nav class="topbar">
+  <a class="brand" href={home}>Ruqi Fahmi Sadad</a>
+  <div class="navlinks">
+    {nav.map((t) => <a href={t.href}>{t.label}</a>)}
+  </div>
+  <a class="pill" href={alt} hreflang={hreflangLain}>{labelLain}</a>
+  <button class="pill" id="theme" type="button" aria-label={gantiTema}>☽</button>
+</nav>
