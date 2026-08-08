@@ -3,86 +3,98 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ruqi-fahmi.github.io/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/"/>
-    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/"/>
+    <lastmod>2026-08-09</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ruqi-fahmi.github.io/en/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/"/>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://ruqi-fahmi.github.io/id/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/"/>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ruqi-fahmi.github.io/karya/pranpc-indihome/</loc>
+    <loc>https://ruqi-fahmi.github.io/work/pranpc-indihome/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/pranpc-indihome/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/pranpc-indihome/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/pranpc-indihome/"/>
-    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/pranpc-indihome/"/>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ruqi-fahmi.github.io/en/work/pranpc-indihome/</loc>
+    <loc>https://ruqi-fahmi.github.io/karya/pranpc-indihome/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/pranpc-indihome/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/pranpc-indihome/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/pranpc-indihome/"/>
-    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/pranpc-indihome/"/>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ruqi-fahmi.github.io/work/pranpc-mobile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/pranpc-mobile/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/pranpc-mobile/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/pranpc-mobile/"/>
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ruqi-fahmi.github.io/karya/pranpc-mobile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/pranpc-mobile/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/pranpc-mobile/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/pranpc-mobile/"/>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/pranpc-mobile/"/>
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ruqi-fahmi.github.io/en/work/pranpc-mobile/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/pranpc-mobile/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/pranpc-mobile/"/>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.6</priority>
+    <loc>https://ruqi-fahmi.github.io/work/c3mr-indihome/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/c3mr-indihome/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/c3mr-indihome/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/c3mr-indihome/"/>
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ruqi-fahmi.github.io/karya/c3mr-indihome/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/c3mr-indihome/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/c3mr-indihome/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/c3mr-indihome/"/>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/c3mr-indihome/"/>
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ruqi-fahmi.github.io/en/work/c3mr-indihome/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/c3mr-indihome/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/c3mr-indihome/"/>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.6</priority>
+    <loc>https://ruqi-fahmi.github.io/work/tiketing-ordering/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/tiketing-ordering/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/tiketing-ordering/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/tiketing-ordering/"/>
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ruqi-fahmi.github.io/karya/tiketing-ordering/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/tiketing-ordering/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/tiketing-ordering/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/tiketing-ordering/"/>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ruqi-fahmi.github.io/en/work/tiketing-ordering/</loc>
-    <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/tiketing-ordering/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/tiketing-ordering/"/>
-    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/tiketing-ordering/"/>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://ruqi-fahmi.github.io/karya/sentimen-media-sosial/</loc>
+    <loc>https://ruqi-fahmi.github.io/work/sentimen-media-sosial/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/sentimen-media-sosial/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/sentimen-media-sosial/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/sentimen-media-sosial/"/>
-    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/sentimen-media-sosial/"/>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ruqi-fahmi.github.io/en/work/sentimen-media-sosial/</loc>
+    <loc>https://ruqi-fahmi.github.io/karya/sentimen-media-sosial/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/work/sentimen-media-sosial/"/>
     <xhtml:link rel="alternate" hreflang="id" href="https://ruqi-fahmi.github.io/karya/sentimen-media-sosial/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ruqi-fahmi.github.io/en/work/sentimen-media-sosial/"/>
-    <lastmod>2026-08-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ruqi-fahmi.github.io/work/sentimen-media-sosial/"/>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>

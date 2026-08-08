@@ -362,7 +362,7 @@ TEKS = {
         "stack": "Teknologi", "lain": "Karya lainnya",
         "catatan": "Ilustrasi di atas adalah gambaran tata letak, bukan tangkapan layar. "
                    "Sistem ini memuat data pelanggan sehingga tampilan aslinya tidak dipublikasikan.",
-        "beranda": "/", "akar": "karya",
+        "beranda": "/id/", "akar": "karya",
     },
     "en": {
         "kembali": "Back to profile", "peran": "Role", "masa": "Period",
@@ -371,7 +371,7 @@ TEKS = {
         "stack": "Technology", "lain": "Other work",
         "catatan": "The illustration above is a layout sketch, not a screenshot. This system "
                    "holds customer data, so the real interface is not published.",
-        "beranda": "/en/", "akar": "en/work",
+        "beranda": "/", "akar": "work",
     },
 }
 
@@ -529,7 +529,7 @@ def halaman(k: dict, bahasa: str) -> str:
   <nav class="topbar">
     <a class="brand" href="{t['beranda']}">Ruqi Fahmi Sadad</a>
     <div class="navlinks"></div>
-    <a class="pill" href="{'/en/work/' + k['slug'] + '/' if bahasa == 'id' else '/karya/' + k['slug'] + '/'}"
+    <a class="pill" href="{'/work/' + k['slug'] + '/' if bahasa == 'id' else '/karya/' + k['slug'] + '/'}"
        hreflang="{'en' if bahasa == 'id' else 'id'}">{'EN' if bahasa == 'id' else 'ID'}</a>
     <button class="pill" id="theme" type="button" aria-label="Ganti tema">☽</button>
   </nav>
@@ -586,7 +586,7 @@ def main() -> None:
     dibuat = []
     for k in KARYA:
         for bahasa in ("id", "en"):
-            akar = "karya" if bahasa == "id" else "en/work"
+            akar = "karya" if bahasa == "id" else "work"
             tujuan = AKAR / akar / k["slug"] / "index.html"
             tujuan.parent.mkdir(parents=True, exist_ok=True)
             tujuan.write_text(halaman(k, bahasa), encoding="utf-8")
