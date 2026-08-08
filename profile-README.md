@@ -22,6 +22,7 @@ Sekarang saya membangun sistem yang mengubah data penagihan mentah menjadi keput
 
 - **Dashboard PraNPC IndiHome**, platform utama pemantauan efektivitas penagihan: capaian terhadap target, laju harian, perbandingan antar periode, peringkat wilayah dan petugas
 - **Dashboard PraNPC Mobile**, sistem sejenis untuk lini seluler pascabayar
+- **Dashboard C3MR IndiHome**, pemantauan efektivitas penagihan tahap awal (First dan Second Reminder) di atas basis pelanggan berskala jutaan baris
 - **Dashboard Tiketing dan Ordering All Channel**, tiket dan pemesanan seluruh kanal dalam satu tampilan, dengan autentikasi dua faktor
 - **Dashboard Analytics Trend Sentimen Media Sosial**, memantau tren dan sentimen percakapan di media sosial
 
