@@ -28,7 +28,23 @@ Sekarang saya membangun sistem yang mengubah data penagihan mentah menjadi keput
 
 **Perkakas**
 
-`Python` · `FastAPI` · `MySQL` · `SQL Server` · `Vue 3` · `PrimeVue` · `Power BI` · `R` · `Linux` · `Nginx` · `Redis` · `Docker` · `GitHub Actions`
+**Bahasa** `Python` `JavaScript` `SQL` `PHP` `Java` `R` `HTML` `CSS`
+
+**Basis data** `SQL Server` `MySQL` `PostgreSQL` `MongoDB` `Redis`, meliputi perancangan skema, optimasi kueri, ETL, rekonsiliasi lintas sumber
+
+**Perkakas basis data** `DBeaver` `phpMyAdmin` `XAMPP` `Laragon`
+
+**Backend** `FastAPI` `Express JS` `Node.js` `Laravel` `REST API` `OOP`
+
+**Frontend** `Vue 3` `PrimeVue` `Vite` `React JS` `Next.js` `Bootstrap`
+
+**Mobile** `React Native` `Android (Java)`
+
+**Data dan analitik** `Power BI` `R` `ETL` `Perancangan definisi metrik` `Visualisasi data`
+
+**Operasional** `Linux` `Nginx` `systemd` `Docker` `Git` `GitHub Actions` `VPS` `SSH tunnel`
+
+**Otomasi dan pemantauan** `RPA` `Pemrosesan terjadwal` `Uptime Kuma` `Peringatan otomatis`
 
 **Sertifikasi**
 
