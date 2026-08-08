@@ -62,7 +62,7 @@
       "@type": "EducationalOccupationalCredential",
       "name": "Associate Strategy Manager (ASM)",
       "credentialCategory": "certification",
-      "url": "https://americanacademy-indonesia.com/member-verify/all-member/",
+      "url": "https://americanacademy-indonesia.com/associate-certificate/associate-certificate-member-status/",
       "recognizedBy": {
         "@type": "Organization",
         "name": "American Academy Asia Pacific — Indonesia Chapter",
@@ -103,134 +103,19 @@
 }
 </script>
 
-<style>
-  :root {
-    --bg: #ffffff;
-    --surface: #f6f7f9;
-    --border: #e3e6ea;
-    --text: #16191d;
-    --muted: #5c6470;
-    --accent: #b3121f;
-    --accent-soft: #fdeced;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #101215; --surface: #171a1f; --border: #262b32;
-      --text: #e9ecf1; --muted: #9aa3b0; --accent: #ff6b78; --accent-soft: #2a1418;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #101215; --surface: #171a1f; --border: #262b32;
-    --text: #e9ecf1; --muted: #9aa3b0; --accent: #ff6b78; --accent-soft: #2a1418;
-  }
-
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
-
-  .topbar { display: flex; justify-content: flex-end; padding: 16px 0; }
-  .lang {
-    font-size: 13px; color: var(--muted); text-decoration: none;
-    border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px;
-  }
-  .lang:hover { color: var(--text); border-color: var(--muted); }
-
-  header { padding: 24px 0 40px; border-bottom: 1px solid var(--border); }
-  h1 { font-size: clamp(30px, 6vw, 42px); line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.02em; }
-  .aka { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
-  .aka strong { color: var(--text); font-weight: 600; }
-  .role { font-size: 18px; color: var(--muted); margin: 0 0 6px; }
-  .place { font-size: 15px; color: var(--muted); margin: 0; }
-
-  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-  .links a {
-    font-size: 14px; text-decoration: none; color: var(--text);
-    border: 1px solid var(--border); border-radius: 8px;
-    padding: 8px 14px; background: var(--surface);
-  }
-  .links a:hover { border-color: var(--accent); color: var(--accent); }
-
-  section { padding-top: 40px; }
-  h2 {
-    font-size: 13px; text-transform: uppercase; letter-spacing: 0.09em;
-    color: var(--muted); margin: 0 0 20px; font-weight: 600;
-  }
-  h3 { font-size: 17px; margin: 0 0 4px; }
-  p { margin: 0 0 14px; }
-  .lead { font-size: 17px; }
-
-  .item { padding: 18px 0; border-top: 1px solid var(--border); }
-  .item:first-of-type { border-top: none; padding-top: 0; }
-  .meta { font-size: 14px; color: var(--muted); margin: 0 0 10px; }
-  .item p:last-child { margin-bottom: 0; }
-
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-  .tag {
-    font-size: 12px; color: var(--muted); background: var(--surface);
-    border: 1px solid var(--border); border-radius: 5px; padding: 3px 9px;
-  }
-
-  .row { display: flex; gap: 14px; padding: 15px 0; border-top: 1px solid var(--border); }
-  .row:first-of-type { border-top: none; padding-top: 0; }
-  .mark {
-    flex: none; width: 32px; height: 32px; border-radius: 8px;
-    background: var(--accent-soft); color: var(--accent);
-    display: grid; place-items: center; font-size: 14px; font-weight: 600;
-  }
-  .row-body strong { display: block; font-weight: 600; }
-  .row-body span { font-size: 14px; color: var(--muted); }
-  .row-body code {
-    font-size: 12px; color: var(--muted);
-    background: var(--surface); border-radius: 4px; padding: 1px 5px;
-  }
-
-  .note { font-size: 14px; color: var(--muted); margin-top: 18px; }
-
-  .skill { padding: 16px 0; border-top: 1px solid var(--border); }
-  .skill:first-child { border-top: none; padding-top: 0; }
-  .skill h3 { font-size: 14px; margin: 0 0 10px; color: var(--text); }
-  .skill .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip {
-    font-size: 13px; color: var(--text); background: var(--surface);
-    border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px;
-  }
-  .chip.kuat { border-color: var(--accent); color: var(--accent); font-weight: 600; }
-  .skill p { font-size: 14px; color: var(--muted); margin: 10px 0 0; }
-  .legend { font-size: 13px; color: var(--muted); margin: -8px 0 22px; }
-  .legend::before {
-    content: ""; display: inline-block; width: 9px; height: 9px;
-    border: 1.5px solid var(--accent); border-radius: 3px; margin-right: 7px;
-  }
-
-  .tl-row { display: flex; gap: 18px; padding: 14px 0; border-top: 1px solid var(--border); }
-  .tl-row:first-child { border-top: none; padding-top: 0; }
-  .tl-year {
-    flex: none; width: 52px; font-weight: 700; font-size: 15px;
-    color: var(--accent); padding-top: 1px;
-  }
-  .tl-row div { font-size: 15px; }
-  @media (max-width: 520px) {
-    .tl-row { flex-direction: column; gap: 4px; }
-    .tl-year { width: auto; }
-  }
-
-  footer {
-    margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--border);
-    font-size: 14px; color: var(--muted);
-  }
-  a { color: var(--accent); }
-</style>
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="top">
 
-  <nav class="topbar"><a class="lang" href="/" hreflang="id">Bahasa Indonesia</a></nav>
+  <nav class="topbar">
+    <a class="brand" href="#top">Ruqi Fahmi Sadad</a>
+    <div class="navlinks"><a href="#journey">Journey</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#awards">Awards</a></div>
+    <a class="pill" href="/" hreflang="id">ID</a>
+    <button class="pill" id="theme" type="button" aria-label="Ganti tema">☽</button>
+  </nav>
 
-  <header>
+  <header class="hero">
     <h1>Ruqi Fahmi Sadad</h1>
     <p class="aka">Also known as <strong>Ruqi Fahmi</strong></p>
     <p class="role">Data Analyst &amp; IT Development</p>
@@ -243,7 +128,7 @@
     </div>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About</h2>
     <p class="lead">
       I have always seen technology as a tool, not the goal itself.
@@ -291,7 +176,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="journey">
     <h2>Journey</h2>
     <div class="tl">
       <div class="tl-row">
@@ -321,7 +206,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="experience">
     <h2>Experience</h2>
 
     <div class="item">
@@ -373,7 +258,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="work">
     <h2>What I have built</h2>
     <div class="item">
       <h3>Dashboard PraNPC IndiHome</h3>
@@ -454,16 +339,15 @@
     </div>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
-    <p class="legend">Items marked in red are the ones I know best and reach for most often.</p>
     <div class="skill">
       <h3>Languages</h3>
-      <div class="chips"><span class="chip kuat">Python</span><span class="chip kuat">JavaScript</span><span class="chip kuat">SQL</span><span class="chip">PHP</span><span class="chip">Java</span><span class="chip">R</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
+      <div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">PHP</span><span class="chip">Java</span><span class="chip">R</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
     </div>
     <div class="skill">
       <h3>Databases</h3>
-      <div class="chips"><span class="chip kuat">SQL Server</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span></div>
+      <div class="chips"><span class="chip">SQL Server</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span></div>
       <p>Schema design, query optimisation, ETL, and cross-source reconciliation.</p>
     </div>
     <div class="skill">
@@ -478,7 +362,7 @@
     </div>
     <div class="skill">
       <h3>Frontend</h3>
-      <div class="chips"><span class="chip kuat">Vue 3</span><span class="chip">PrimeVue</span><span class="chip">Vite</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Bootstrap</span></div>
+      <div class="chips"><span class="chip">Vue 3</span><span class="chip">PrimeVue</span><span class="chip">Vite</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Bootstrap</span></div>
     </div>
     <div class="skill">
       <h3>Mobile</h3>
@@ -505,7 +389,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="training">
     <h2>Training</h2>
 
     <div class="row">
@@ -547,7 +431,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="certifications">
     <h2>Certifications</h2>
 
     <div class="row">
@@ -556,7 +440,7 @@
         <strong>Associate Strategy Manager (ASM)</strong>
         <span>
           American Academy Asia Pacific, Indonesia Chapter ·
-          <a href="https://americanacademy-indonesia.com/member-verify/all-member/">membership verification</a>
+          <a href="https://americanacademy-indonesia.com/associate-certificate/associate-certificate-member-status/">membership verification</a>
         </span>
       </div>
     </div>
@@ -586,7 +470,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="awards">
     <h2>Awards</h2>
 
     <div class="row">
@@ -639,7 +523,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="leadership">
     <h2>Leadership &amp; organisations</h2>
 
     <div class="item">
@@ -674,7 +558,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="interests">
     <h2>Beyond the work</h2>
     <p>
       My interests cluster in a few places: finance, data processing,
@@ -689,7 +573,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="education">
     <h2>Education</h2>
     <div class="item">
       <h3>Universitas Mulawarman</h3>
@@ -707,5 +591,6 @@
   </footer>
 
 </div>
+<script src="/assets/app.js" defer></script>
 </body>
 </html>

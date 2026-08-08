@@ -50,7 +50,7 @@ Selain perkakas di atas: perancangan skema dan optimasi kueri, ETL dan rekonsili
 
 **Sertifikasi**
 
-- **Associate Strategy Manager (ASM)**, American Academy Asia Pacific, Indonesia Chapter ([verifikasi](https://americanacademy-indonesia.com/member-verify/all-member/))
+- **Associate Strategy Manager (ASM)**, American Academy Asia Pacific, Indonesia Chapter ([verifikasi](https://americanacademy-indonesia.com/associate-certificate/associate-certificate-member-status/))
 - R Fundamental for Data Science, Introduction to Data Science with R, dan Fundamental SQL Using Select Statement dari DQLab, 2022
 
 **Prestasi**
