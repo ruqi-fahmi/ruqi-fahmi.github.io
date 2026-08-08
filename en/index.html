@@ -185,6 +185,18 @@
 
   .note { font-size: 14px; color: var(--muted); margin-top: 18px; }
 
+  .tl-row { display: flex; gap: 18px; padding: 14px 0; border-top: 1px solid var(--border); }
+  .tl-row:first-child { border-top: none; padding-top: 0; }
+  .tl-year {
+    flex: none; width: 52px; font-weight: 700; font-size: 15px;
+    color: var(--accent); padding-top: 1px;
+  }
+  .tl-row div { font-size: 15px; }
+  @media (max-width: 520px) {
+    .tl-row { flex-direction: column; gap: 4px; }
+    .tl-year { width: auto; }
+  }
+
   footer {
     margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--border);
     font-size: 14px; color: var(--muted);
@@ -218,18 +230,69 @@
       teams actually use.
     </p>
     <p>
-      My background is management, not computer science. I picked up the
-      engineering while solving real problems at work, and that combination is
-      what I rely on: I understand what the business side actually wants to
-      know, and I can write the queries, the backend and the interface that
-      answer it.
+      The path was not a straight one. I went to university for Management, not
+      computer science. In early 2021, while still studying, I was handed
+      responsibility for a foundation's database — MySQL, phpMyAdmin, XAMPP.
+      That was the first time a database was mine to look after rather than
+      something to pass an exam on. It turned out I loved it.
     </p>
     <p>
-      What I care about is not a busy dashboard but a correct number. A metric
-      with the wrong definition quietly misleads decisions for months, so I
-      spend real effort keeping metric definitions consistent and traceable back
-      to their source.
+      So I decided to learn properly. Through 2022 and 2023 I worked through
+      three consecutive bootcamps — from HTML up to Laravel, then the full
+      JavaScript stack: React, Next JS, Express, MongoDB and React Native. All
+      of it alongside full-time study, maintaining that database, and leading
+      student organisations.
     </p>
+    <p>
+      Both sides grew together. In the same year I won a national Marketing Plan
+      Competition at Universitas Andalas and took first place in a Qur'an
+      application design competition, going on to the national finals. One from
+      business, one from engineering. I never felt I had to pick a side.
+    </p>
+    <p>
+      My career at Telkomsel also started on the customer-facing side, in
+      Customer Care and Retention. Almost two years there taught me how
+      collections operations actually run — what customers complain about, what
+      makes an agent's job hard. So when I moved on to building the analytics
+      for it, I already knew which questions genuinely needed answering.
+    </p>
+    <p>
+      That is what I rely on now: understanding what the business wants to know,
+      and being able to write the queries, the backend and the interface that
+      answer it. And what I care about is not a busy dashboard but a correct
+      number — a metric with the wrong definition quietly misleads decisions for
+      months.
+    </p>
+  </section>
+
+  <section>
+    <h2>Journey</h2>
+    <div class="tl">
+      <div class="tl-row">
+        <span class="tl-year">2020</span>
+        <div>Started a Management degree at Universitas Mulawarman. Active in the International Language Society, SQ Unmul and LDF An-Nuur FEB.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2021</span>
+        <div><strong>First database</strong> — took on IT Specialist at Yayasan Madinah Salam, maintaining MySQL through phpMyAdmin. 3rd place in the Baznas national creative video competition.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2022</span>
+        <div><strong>The year of learning properly</strong> — web coding training at HalalCode (Jan–Jul), R and SQL certifications from DQLab, then the PWA/Android/iOS bootcamp at IOI (Aug, 48 sessions). 2nd place in the UIN Imam Bonjol national creative video competition. Served as Chairman of LDF An-Nuur.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2023</span>
+        <div><strong>The harvest</strong> — Web &amp; Mobile Development bootcamp at IOI (Feb, 50 sessions). 1st place in the ANMPC Marketing Plan Competition at Universitas Andalas, 1st place in the MTQ Qur'an Application Design category, and a national finalist at MTQMN XVII, Universitas Brawijaya. Graduated in December with a 3.77 GPA.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2024</span>
+        <div>Joined <strong>Telkomsel</strong> in Customer Care and Retention — learning collections operations from the customer's side.</div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-year">2026</span>
+        <div><strong>Back to data</strong> — Data Analyst for OBC Telkomsel at PT Infomedia Nusantara, building the collections analytics for the very operation I used to work inside.</div>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -276,41 +339,6 @@
     <div class="item">
       <h3>Service Ambassador</h3>
       <p class="meta">Universitas Mulawarman · Jul 2023 – Mar 2024 · Samarinda</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Leadership &amp; organisations</h2>
-
-    <div class="item">
-      <h3>LDF An-Nuur FEB Universitas Mulawarman</h3>
-      <p class="meta">Nov 2020 – Dec 2023 · 3 years 2 months</p>
-      <p>
-        Rose from staff to leading the organisation: Media Outreach Staff (Nov
-        2020), Head of Media Outreach Department (May 2021), <strong>Chairman</strong>
-        (Dec 2021 – Dec 2022), then Chair of the Representative Council (Dec
-        2022 – Dec 2023).
-      </p>
-    </div>
-
-    <div class="item">
-      <h3>Secretary General — BPPAI Universitas Mulawarman</h3>
-      <p class="meta">Dec 2022 – Dec 2023</p>
-    </div>
-
-    <div class="item">
-      <h3>Head of Regional Coordinator — Free English Program Samarinda</h3>
-      <p class="meta">Nov 2022 – Dec 2023 · promoted from Regional Coordinator</p>
-    </div>
-
-    <div class="item">
-      <h3>HR Staff — International Language Society</h3>
-      <p class="meta">Sep 2020 – Nov 2022 · Samarinda</p>
-    </div>
-
-    <div class="item">
-      <h3>Education Staff — SQ Universitas Mulawarman</h3>
-      <p class="meta">Oct 2020 – Dec 2021 · Samarinda</p>
     </div>
   </section>
 
@@ -364,6 +392,84 @@
         of manual work with jobs that run themselves.
       </p>
     </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p>
+      <strong>Databases</strong> — <strong>SQL Server</strong> (my strongest),
+      MySQL, PostgreSQL. Schema design, query optimisation, ETL and cross-source
+      reconciliation. I work with remote databases through DBeaver day to day,
+      and came up through phpMyAdmin, XAMPP and Laragon.
+    </p>
+    <p>
+      <strong>Backend</strong> — Python (FastAPI, stdlib HTTP server), API
+      design, scheduled processing, third-party API integration.
+    </p>
+    <p>
+      <strong>JavaScript</strong> — the full ecosystem, interface through to
+      server: JavaScript and OOP, React JS, Next JS, Express JS, MongoDB, and
+      React Native for mobile. This is the fullstack track I worked through in
+      three consecutive bootcamps, from development to deployment.
+    </p>
+    <p>
+      <strong>Other frontend</strong> — Vue 3, PrimeVue, Vite and data
+      visualisation, which is what I use daily in my current role. Also PHP,
+      Laravel and Bootstrap, plus Android applications in Java.
+    </p>
+    <p>
+      <strong>Analytics</strong> — Power BI, R, metric definition design.
+    </p>
+    <p>
+      <strong>Operations</strong> — Linux, Nginx, systemd, Redis, Docker, GitHub
+      Actions, uptime monitoring and alerting.
+    </p>
+    <p>
+      <strong>Business</strong> — marketing strategy and planning, team
+      management, operational analysis.
+    </p>
+  </section>
+
+  <section>
+    <h2>Training</h2>
+
+    <div class="row">
+      <div class="mark">&#9670;</div>
+      <div class="row-body">
+        <strong>Web &amp; Mobile Development Bootcamp — Batch 3</strong>
+        <span>
+          Input/Output International Academy (IOI) · Feb 2023 · 50 sessions<br>
+          JavaScript, OOP, React JS, Express JS, MongoDB, React Native
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">&#9670;</div>
+      <div class="row-body">
+        <strong>PWA, Android &amp; iOS Development Bootcamp — Batch 2</strong>
+        <span>
+          Input/Output International Academy (IOI) · Aug 2022 · 48 sessions<br>
+          JavaScript, OOP, React JS, Express JS, MongoDB, Next JS, React Native
+        </span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mark">&#9670;</div>
+      <div class="row-body">
+        <strong>Web Coding Training — From Zero to Pro, Batch 2</strong>
+        <span>
+          HalalCode · Jan – Jul 2022 · 6 months<br>
+          HTML, CSS, Bootstrap, JavaScript, MySQL, PHP, OOP, Laravel, React JS
+        </span>
+      </div>
+    </div>
+
+    <p class="note">
+      All three ran through 2022–2023 — alongside full-time study, owning
+      databases at Yayasan Madinah Salam, and leading student organisations.
+    </p>
   </section>
 
   <section>
@@ -459,81 +565,38 @@
   </section>
 
   <section>
-    <h2>Skills</h2>
-    <p>
-      <strong>Databases</strong> — <strong>SQL Server</strong> (my strongest),
-      MySQL, PostgreSQL. Schema design, query optimisation, ETL and cross-source
-      reconciliation. I work with remote databases through DBeaver day to day,
-      and came up through phpMyAdmin, XAMPP and Laragon.
-    </p>
-    <p>
-      <strong>Backend</strong> — Python (FastAPI, stdlib HTTP server), API
-      design, scheduled processing, third-party API integration.
-    </p>
-    <p>
-      <strong>JavaScript</strong> — the full ecosystem, interface through to
-      server: JavaScript and OOP, React JS, Next JS, Express JS, MongoDB, and
-      React Native for mobile. This is the fullstack track I worked through in
-      three consecutive bootcamps, from development to deployment.
-    </p>
-    <p>
-      <strong>Other frontend</strong> — Vue 3, PrimeVue, Vite and data
-      visualisation, which is what I use daily in my current role. Also PHP,
-      Laravel and Bootstrap, plus Android applications in Java.
-    </p>
-    <p>
-      <strong>Analytics</strong> — Power BI, R, metric definition design.
-    </p>
-    <p>
-      <strong>Operations</strong> — Linux, Nginx, systemd, Redis, Docker, GitHub
-      Actions, uptime monitoring and alerting.
-    </p>
-    <p>
-      <strong>Business</strong> — marketing strategy and planning, team
-      management, operational analysis.
-    </p>
-  </section>
+    <h2>Leadership &amp; organisations</h2>
 
-  <section>
-    <h2>Training</h2>
-
-    <div class="row">
-      <div class="mark">&#9670;</div>
-      <div class="row-body">
-        <strong>Web &amp; Mobile Development Bootcamp — Batch 3</strong>
-        <span>
-          Input/Output International Academy (IOI) · Feb 2023 · 50 sessions<br>
-          JavaScript, OOP, React JS, Express JS, MongoDB, React Native
-        </span>
-      </div>
+    <div class="item">
+      <h3>LDF An-Nuur FEB Universitas Mulawarman</h3>
+      <p class="meta">Nov 2020 – Dec 2023 · 3 years 2 months</p>
+      <p>
+        Rose from staff to leading the organisation: Media Outreach Staff (Nov
+        2020), Head of Media Outreach Department (May 2021), <strong>Chairman</strong>
+        (Dec 2021 – Dec 2022), then Chair of the Representative Council (Dec
+        2022 – Dec 2023).
+      </p>
     </div>
 
-    <div class="row">
-      <div class="mark">&#9670;</div>
-      <div class="row-body">
-        <strong>PWA, Android &amp; iOS Development Bootcamp — Batch 2</strong>
-        <span>
-          Input/Output International Academy (IOI) · Aug 2022 · 48 sessions<br>
-          JavaScript, OOP, React JS, Express JS, MongoDB, Next JS, React Native
-        </span>
-      </div>
+    <div class="item">
+      <h3>Secretary General — BPPAI Universitas Mulawarman</h3>
+      <p class="meta">Dec 2022 – Dec 2023</p>
     </div>
 
-    <div class="row">
-      <div class="mark">&#9670;</div>
-      <div class="row-body">
-        <strong>Web Coding Training — From Zero to Pro, Batch 2</strong>
-        <span>
-          HalalCode · Jan – Jul 2022 · 6 months<br>
-          HTML, CSS, Bootstrap, JavaScript, MySQL, PHP, OOP, Laravel, React JS
-        </span>
-      </div>
+    <div class="item">
+      <h3>Head of Regional Coordinator — Free English Program Samarinda</h3>
+      <p class="meta">Nov 2022 – Dec 2023 · promoted from Regional Coordinator</p>
     </div>
 
-    <p class="note">
-      All three ran through 2022–2023 — alongside full-time study, owning
-      databases at Yayasan Madinah Salam, and leading student organisations.
-    </p>
+    <div class="item">
+      <h3>HR Staff — International Language Society</h3>
+      <p class="meta">Sep 2020 – Nov 2022 · Samarinda</p>
+    </div>
+
+    <div class="item">
+      <h3>Education Staff — SQ Universitas Mulawarman</h3>
+      <p class="meta">Oct 2020 – Dec 2021 · Samarinda</p>
+    </div>
   </section>
 
   <section>
