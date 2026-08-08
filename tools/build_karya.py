@@ -500,10 +500,21 @@ def halaman(k: dict, bahasa: str) -> str:
 <meta name="description" content="{H.escape(d['ringkas'])} Dibangun oleh Ruqi Fahmi Sadad.">
 <meta name="author" content="Ruqi Fahmi Sadad">
 <link rel="canonical" href="{url}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="theme-color" content="#b3121f">
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="Ruqi Fahmi Sadad">
 <meta property="og:title" content="{H.escape(d['nama'])} — Ruqi Fahmi Sadad">
 <meta property="og:description" content="{H.escape(d['ringkas'])}">
 <meta property="og:url" content="{url}">
+<meta property="og:image" content="{SITUS}/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ruqi Fahmi Sadad, Data Analyst dan IT Development">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITUS}/assets/og-image.png">
 <script type="application/ld+json">
 {json.dumps(skema, ensure_ascii=False, indent=2)}
 </script>
