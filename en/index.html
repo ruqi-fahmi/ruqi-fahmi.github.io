@@ -49,10 +49,10 @@
     "Python", "JavaScript", "SQL", "PHP",
     "Java", "R", "HTML", "CSS",
     "SQL Server", "MySQL", "PostgreSQL", "MongoDB",
-    "Redis", "FastAPI", "Express.js", "Node.js",
+    "Redis", "FastAPI", "Express", "Node.js",
     "Laravel", "REST API", "Vue.js", "PrimeVue",
     "Vite", "React", "Next.js", "Bootstrap",
-    "React Native", "Android Development", "Power BI", "ETL",
+    "React Native", "Android", "Power BI", "ETL",
     "Data Analysis", "Business Intelligence", "Data Visualization", "Linux",
     "Nginx", "Docker", "Git", "GitHub Actions",
     "Robotic Process Automation", "Dashboard Engineering", "Marketing Strategy"
@@ -200,6 +200,11 @@
   }
   .chip.kuat { border-color: var(--accent); color: var(--accent); font-weight: 600; }
   .skill p { font-size: 14px; color: var(--muted); margin: 10px 0 0; }
+  .legend { font-size: 13px; color: var(--muted); margin: -8px 0 22px; }
+  .legend::before {
+    content: ""; display: inline-block; width: 9px; height: 9px;
+    border: 1.5px solid var(--accent); border-radius: 3px; margin-right: 7px;
+  }
 
   .tl-row { display: flex; gap: 18px; padding: 14px 0; border-top: 1px solid var(--border); }
   .tl-row:first-child { border-top: none; padding-top: 0; }
@@ -451,6 +456,7 @@
 
   <section>
     <h2>Skills</h2>
+    <p class="legend">Items marked in red are the ones I know best and reach for most often.</p>
     <div class="skill">
       <h3>Languages</h3>
       <div class="chips"><span class="chip kuat">Python</span><span class="chip kuat">JavaScript</span><span class="chip kuat">SQL</span><span class="chip">PHP</span><span class="chip">Java</span><span class="chip">R</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
@@ -458,7 +464,7 @@
     <div class="skill">
       <h3>Databases</h3>
       <div class="chips"><span class="chip kuat">SQL Server</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span></div>
-      <p>SQL Server is my strongest. Schema design, query optimisation, ETL and cross-source reconciliation.</p>
+      <p>Schema design, query optimisation, ETL, and cross-source reconciliation.</p>
     </div>
     <div class="skill">
       <h3>Database tooling</h3>
@@ -467,31 +473,35 @@
     </div>
     <div class="skill">
       <h3>Backend</h3>
-      <div class="chips"><span class="chip">FastAPI</span><span class="chip">Express JS</span><span class="chip">Node.js</span><span class="chip">Laravel</span><span class="chip">REST API</span><span class="chip">OOP</span></div>
+      <div class="chips"><span class="chip">FastAPI</span><span class="chip">Express</span><span class="chip">Node.js</span><span class="chip">Laravel</span></div>
+      <p>REST API design, object-oriented programming, and scheduled processing.</p>
     </div>
     <div class="skill">
       <h3>Frontend</h3>
-      <div class="chips"><span class="chip kuat">Vue 3</span><span class="chip">PrimeVue</span><span class="chip">Vite</span><span class="chip">React JS</span><span class="chip">Next.js</span><span class="chip">Bootstrap</span></div>
+      <div class="chips"><span class="chip kuat">Vue 3</span><span class="chip">PrimeVue</span><span class="chip">Vite</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Bootstrap</span></div>
     </div>
     <div class="skill">
       <h3>Mobile</h3>
-      <div class="chips"><span class="chip">React Native</span><span class="chip">Android (Java)</span></div>
+      <div class="chips"><span class="chip">React Native</span><span class="chip">Android</span></div>
     </div>
     <div class="skill">
       <h3>Data and analytics</h3>
-      <div class="chips"><span class="chip">Power BI</span><span class="chip">R</span><span class="chip">ETL</span><span class="chip">Metric definition design</span><span class="chip">Data visualisation</span></div>
+      <div class="chips"><span class="chip">Power BI</span><span class="chip">R</span></div>
+      <p>ETL, metric definition design, and data visualisation.</p>
     </div>
     <div class="skill">
       <h3>Operations and deployment</h3>
-      <div class="chips"><span class="chip">Linux</span><span class="chip">Nginx</span><span class="chip">systemd</span><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">VPS</span><span class="chip">SSH tunnel</span></div>
+      <div class="chips"><span class="chip">Linux</span><span class="chip">Nginx</span><span class="chip">systemd</span><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">GitHub Actions</span></div>
+      <p>Deployment to VPS, access over SSH tunnels, and keeping production services healthy.</p>
     </div>
     <div class="skill">
       <h3>Automation and monitoring</h3>
-      <div class="chips"><span class="chip">RPA</span><span class="chip">Scheduled processing</span><span class="chip">Uptime Kuma</span><span class="chip">Automated alerting</span></div>
+      <div class="chips"><span class="chip">Uptime Kuma</span></div>
+      <p>Automating repetitive work, scheduled processing, and alerting when a job fails.</p>
     </div>
     <div class="skill">
       <h3>Business</h3>
-      <div class="chips"><span class="chip">Marketing strategy</span><span class="chip">Planning</span><span class="chip">Team management</span><span class="chip">Operational analysis</span></div>
+      <p>Marketing strategy and planning, team management, and operational analysis.</p>
     </div>
   </section>
 

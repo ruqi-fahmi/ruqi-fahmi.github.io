@@ -30,21 +30,23 @@ Sekarang saya membangun sistem yang mengubah data penagihan mentah menjadi keput
 
 **Bahasa** `Python` `JavaScript` `SQL` `PHP` `Java` `R` `HTML` `CSS`
 
-**Basis data** `SQL Server` `MySQL` `PostgreSQL` `MongoDB` `Redis`, meliputi perancangan skema, optimasi kueri, ETL, rekonsiliasi lintas sumber
+**Basis data** `SQL Server` `MySQL` `PostgreSQL` `MongoDB` `Redis`
 
 **Perkakas basis data** `DBeaver` `phpMyAdmin` `XAMPP` `Laragon`
 
-**Backend** `FastAPI` `Express JS` `Node.js` `Laravel` `REST API` `OOP`
+**Backend** `FastAPI` `Express` `Node.js` `Laravel`
 
-**Frontend** `Vue 3` `PrimeVue` `Vite` `React JS` `Next.js` `Bootstrap`
+**Frontend** `Vue 3` `PrimeVue` `Vite` `React` `Next.js` `Bootstrap`
 
-**Mobile** `React Native` `Android (Java)`
+**Mobile** `React Native` `Android`
 
-**Data dan analitik** `Power BI` `R` `ETL` `Perancangan definisi metrik` `Visualisasi data`
+**Data dan analitik** `Power BI` `R`
 
-**Operasional** `Linux` `Nginx` `systemd` `Docker` `Git` `GitHub Actions` `VPS` `SSH tunnel`
+**Operasional** `Linux` `Nginx` `systemd` `Docker` `Git` `GitHub Actions`
 
-**Otomasi dan pemantauan** `RPA` `Pemrosesan terjadwal` `Uptime Kuma` `Peringatan otomatis`
+**Pemantauan** `Uptime Kuma`
+
+Selain perkakas di atas: perancangan skema dan optimasi kueri, ETL dan rekonsiliasi data lintas sumber, desain REST API, perancangan definisi metrik, otomasi proses berulang, serta penerapan dan pemeliharaan layanan di VPS.
 
 **Sertifikasi**
 
